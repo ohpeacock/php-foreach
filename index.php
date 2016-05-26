@@ -10,7 +10,7 @@ $JanDate = strtotime('01-01-1998'); // convert the string '01-01-1998' to time f
         $startdate = $fields[2]; // create startdate variable to hold contents of $fields[2]
         $salary = $fields[4]; // create salary variable to hold contents of $fields[4]
         $rating = trim($fields[5]); // create rating variable to hold contents of $fields[5]
-        $list [$lastname] = array($startdate, $rating, $salary); // create an array list with a key of lastnamw with the values of startdate, rating, and salary
+        $list [$lastname] = array($startdate, $rating, $salary); // create an array list with a key of lastname with the values of startdate, rating, and salary
     }
     ksort($list); // sort the array list alphabetically by key
         foreach ($list as $lastname =>$values) // for each list value with the key of lastname, loop through and create an array called values
